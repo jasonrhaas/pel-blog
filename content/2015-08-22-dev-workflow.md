@@ -30,11 +30,11 @@ Before we get started, this relies on having your Github account synced to your 
 
 To set up your repo (example directories and values):
 
-```
-cd ~/repos/pig
-git config user.name "Porky"
-git config user.email "Porky@company.com"
-```
+    :::bash
+    cd ~/repos/pig
+    git config user.name "Porky"
+    git config user.email "Porky@company.com"
+
 
 Also another thing you'll want to do to get colored output:
 
@@ -70,11 +70,11 @@ It is important that the prefix, in this case "PIG" matches up with the prefix o
 
 It is best to branch off of a **develop** branch so that the **master** branch is left alone since the **master** branch is often the production branch.  For really small teams and for code that is not in production yet, it's OK to branch off of master.  For this example, I'll branch off of **master**.
 
-```
-cd ~/repos/pig
-git checkout master
-git checkout -b PIG-101
-```
+    :::bash
+    cd ~/repos/pig
+    git checkout master
+    git checkout -b PIG-101
+
 
 The `git checkout -b` creates a new branch with the name `PIG-101` and immediately switches to that branch.  From here on, all of your work for issue **PIG-101** will occur here.  If you navigate to the task in JIRA, you will see that the branch is now linked to the JIRA task.
 
@@ -82,11 +82,11 @@ The `git checkout -b` creates a new branch with the name `PIG-101` and immediate
 
 When it comes to committing code, **commit early, commit often.** Do not be concerned about committing broken code right now.  At this point in the development process, you should be concerned about having lots of save points so you can easily revert changes in a piecemeal way if you so desire.  In general, I try to make a commit whenever I add any functional piece of code.  In `Python`, it could be a function or a class.  In `Ansible`, it might be a playbook or a configuration file.  If  I have a test environment available (more about that next), I may run the code first to see if I made any mistakes or typos.
 
-```
-git add tor.yml
-git commit -m "add playbook for tor role"
-git push -u origin PIG-101
-```
+    :::bash
+    git add tor.yml
+    git commit -m "add playbook for tor role"
+    git push -u origin PIG-101
+
 The commands above add a file to the git index, commit it, and push a *new* branch up to the remote repository.  After the first time, you can simply do `git push`.  Now if you go to Github or JIRA you will see the new branch and any commits associated with the feature.
 
 #### 4. Test code
@@ -101,35 +101,35 @@ vagrant init chef/centos-6.5
 
 This creates a `Vagrantfile` that must be edited to configure it for our needs.  Here is the one I created for this 3 node cluster:
 
-```
-VAGRANTFILE_API_VERSION = "2"
+    :::ruby
+    VAGRANTFILE_API_VERSION = "2"
 
-Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+    Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.ssh.forward_agent = true
+      config.ssh.forward_agent = true
 
-  config.vm.define "pig2", primary: true do |pig2|
-    pig2.vm.box = "chef/centos-6.5"
-    pig2.vm.hostname = "pig2"
-    pig2.vm.network "private_network", ip: "192.168.33.10"
-    pig2.vm.provision :shell, path: "keys.sh"
-  end
+      config.vm.define "pig2", primary: true do |pig2|
+        pig2.vm.box = "chef/centos-6.5"
+        pig2.vm.hostname = "pig2"
+        pig2.vm.network "private_network", ip: "192.168.33.10"
+        pig2.vm.provision :shell, path: "keys.sh"
+      end
 
-  config.vm.define "pig3", primary: true do |pig3|
-    pig3.vm.box = "chef/centos-6.5"
-    pig3.vm.hostname = "pig3"
-    pig3.vm.network "private_network", ip: "192.168.33.11"
-    pig3.vm.provision :shell, path: "keys.sh"
-  end
+      config.vm.define "pig3", primary: true do |pig3|
+        pig3.vm.box = "chef/centos-6.5"
+        pig3.vm.hostname = "pig3"
+        pig3.vm.network "private_network", ip: "192.168.33.11"
+        pig3.vm.provision :shell, path: "keys.sh"
+      end
 
-  config.vm.define "pig4", primary: true do |pig4|
-    pig4.vm.box = "chef/centos-6.5"
-    pig4.vm.hostname = "pig4"
-    pig4.vm.network "private_network", ip: "192.168.33.12"
-    pig4.vm.provision :shell, path: "keys.sh"
-  end
-end
-```
+      config.vm.define "pig4", primary: true do |pig4|
+        pig4.vm.box = "chef/centos-6.5"
+        pig4.vm.hostname = "pig4"
+        pig4.vm.network "private_network", ip: "192.168.33.12"
+        pig4.vm.provision :shell, path: "keys.sh"
+      end
+    end
+
 
 For the veteran hackers, you may have noticed that the syntax looks like Ruby (it is).  You may have also noticed that there is an additional shell script in there that I didn't talk about.  `keys.sh` is just a simple command that copies over my public ssh key so that I can ssh into the machine as user `vagrant`.  This is especially handy when provisioning with `Ansible`, since it needs to be able to ssh into the box to work**.
 
