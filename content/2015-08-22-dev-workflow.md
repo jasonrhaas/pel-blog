@@ -7,13 +7,14 @@ tags: git, vagrant, ansible, jira, virtualbox
 ---
 
 
-There are many different ways to manage your git workflow, and a lot depends on the size of the team and how the team works together.  For simplicity I'm going to break it down into 3 different types of Git workflow that I have seen:
-
+There are many different ways to manage your git workflow, and a lot depends on the size of the team and how the team works together.  For simplicity I'm going to break it down into 3 different types of Git workflow that I have seen:  Master branch only, feature branch workflow, and gitflow.
 
 #### Everyone pushes to central branch (master)
 is by far the simplest, but it makes it difficult to track new features coming into the software and can also be chaotic when working with teams.
+
 #### Feature branch workflow
 is great for small teams that don't have the need for supporting a lot of production level code hot fixes.
+
 #### Gitflow branch workflow
 is best for larger team that have developers working on new features, hot fixes, and supporting production code releases
 
