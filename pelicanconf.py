@@ -19,6 +19,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+# Include image folder
+STATIC_PATHS = ['images']
+
 # Blogroll
 LINKS = (('jasonrhaas.com', 'http://jasonrhaas.com'),
          # ('Python.org', 'http://python.org/'),
@@ -35,8 +38,14 @@ DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-THEME = 'gum'
+THEME = 'pelican-sober'
 
+# pelican-sober settings
+PELICAN_SOBER_ABOUT = "My name is Jason, and I <3 Python + Git"
+PELICAN_SOBER_STICKY_SIDEBAR = False
+PELICAN_SOBER_TWITTER_CARD_CREATOR = 'jasonrhaas'
+
+# Other Theme settings
 GITHUB_URL = 'http://github.com/jasonrhaas'
 TWITTER_URL = 'http://twitter.com/jasonrhaas'
 TWITTER_USERNAME = 'jasonrhaas'
