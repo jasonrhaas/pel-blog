@@ -38,7 +38,7 @@ DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-THEME = 'pelican-sober'
+THEME = 'aboutwilson'
 
 # pelican-sober settings
 PELICAN_SOBER_ABOUT = "My name is Jason, and I <3 Python + Git"
