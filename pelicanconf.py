@@ -20,7 +20,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Include image folder
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['images', 'pages']
 
 # Blogroll
 LINKS = (('jasonrhaas.com', 'http://jasonrhaas.com'),
@@ -49,3 +49,7 @@ PELICAN_SOBER_TWITTER_CARD_CREATOR = 'jasonrhaas'
 GITHUB_URL = 'http://github.com/jasonrhaas'
 TWITTER_URL = 'http://twitter.com/jasonrhaas'
 TWITTER_USERNAME = 'jasonrhaas'
+
+# DISPLAY_PAGES_ON_MENU = True
+
+# SITESUBTITLE = u'Just another tech blog'

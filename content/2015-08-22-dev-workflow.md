@@ -1,21 +1,19 @@
----
-layout: post
-title: Development workflow
+Title: Development workflow
 Slug: development-workflow
-category: software development
-tags: git, vagrant, ansible, jira, virtualbox
----
-
+Date: 2015-08-22
+Tags: git, vagrant, ansible, jira, virtualbox
+Category: software development
+Author: Jason Haas 
 
 There are many different ways to manage your git workflow, and a lot depends on the size of the team and how the team works together.  For simplicity I'm going to break it down into 3 different types of Git workflow that I have seen:  Master branch only, feature branch workflow, and gitflow.
 
-#### Everyone pushes to central branch (master)
+### Everyone pushes to central branch (master)
 is by far the simplest, but it makes it difficult to track new features coming into the software and can also be chaotic when working with teams.
 
-#### Feature branch workflow
+### Feature branch workflow
 is great for small teams that don't have the need for supporting a lot of production level code hot fixes.
 
-#### Gitflow branch workflow
+### Gitflow branch workflow
 is best for larger team that have developers working on new features, hot fixes, and supporting production code releases
 
 ## Feature branch workflow

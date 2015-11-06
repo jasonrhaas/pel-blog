@@ -1,9 +1,9 @@
----
-layout: post
-title: Trying Out Pelican
-category: blogs
-tags: pelican, jekyll, fabric, python
----
+Title: Trying Out Pelican
+Slug: trying-out-pelican
+Date: 2015-03-21
+Tags: pelican, jekyll, fabric, python
+Category: blogs
+Author: Jason Haas
 
 So as I mentioned in my first post, I decided to start my blog using Jekyll because it seemed to be the most widely used while still being fairly lightweight. However, as I began to look at trying to customize the site, I found the structure and templating system a little bit weird and unfamiliar.
 

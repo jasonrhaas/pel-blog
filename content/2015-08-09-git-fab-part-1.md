@@ -1,10 +1,9 @@
----
-layout: post
-title: Git Fab Part 1
+Title: Git Fab Part 1
 Slug: git-fab-part-1
-category: software development
-tags: git
----
+Date: 2015-08-09
+Tags: git
+Category: software development
+Author: Jason Haas 
 
 If you're luckly enough to live in the modern era of version control, you probably rely on `git` on a daily basis.  When I started to get into software, I had tinkered around with CVS, SVN, and a tool called Accurev.  Before I left my last company, I started to learn `git`.  Almost immediately I saw how it was powerful beyond traditional version control tools.  However, I see a lot of software developers not taking advantage of it's full functionality.
 
