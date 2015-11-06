@@ -7,7 +7,8 @@ Slug: open-source
 Authors: Jason Haas
 Summary: Open Source software projects
 
-## Open source ![Alt Text]({filename}/images/feather.png)
+## Open source 
+<!-- ![Alt Text]({filename}/images/feather.png) -->
 
 I'm a big fan of open source, and anyone that has been working with software in the last 5 years knows that a ton of cutting edge software development is happening in the world of open source.  Open source combined with Github and *NIX is a powerful thing.  I like to contribute to open source whenever I can, here is a listing of some of the projects I've been contributing to:
 
