@@ -20,11 +20,13 @@ A lot of the open source work I've done is thanks to my company, **IST Research.
 
 This project came out of my need to constantly hack together Python scripts and then push the (JSON) formated data out to various data stores like ElasticSearch, MongoDB, and Hbase.  I developed this tool for my own needs, but thought that others may also get some use out of it.  *Python hackers should never have to solve the same problem twice!*
 
-### [Traptor](https://github.com/istresearch/traptor)
+<!-- ### [Traptor](https://github.com/istresearch/traptor) -->
+### Traptor (open sourcing soon)
 
 Short for "Twitter Raptor", this tool is a distributed Twitter collection engine.  It relies on a ruleset that is managed in Redis and distributes the data collection out to an arbitrary number of Traptor instances.
 
-### [Warden](https://github.com/istresearch/warden)
+<!-- ### [Warden](https://github.com/istresearch/warden) -->
+### Warden (open sourcing soon)
 
 Warden is a simple web API to help keep track of all your `supervisor` processes spread across all your servers.  You can learn more about this excellent tool at [supervisord.org](http://supervisord.org)
 
