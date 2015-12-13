@@ -20,7 +20,10 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Include image folder
-STATIC_PATHS = ['images', 'pages']
+STATIC_PATHS = ['images', 'pages', 'files']
+
+# Don't try to generate article from static files
+ARTICLE_EXCLUDES = ['files']
 
 # Blogroll
 LINKS = (('jasonrhaas.com', 'http://jasonrhaas.com'),
