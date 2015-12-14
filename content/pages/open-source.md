@@ -8,11 +8,24 @@ Authors: Jason Haas
 Summary: Open Source software projects
 
 ## Open source 
-<!-- ![Alt Text]({filename}/images/feather.png) -->
 
-I'm a big fan of open source, and anyone that has been working with software in the last 5 years knows that a ton of cutting edge software development is happening in the world of open source.  Open source combined with Github and *NIX is a powerful thing.  I like to contribute to open source whenever I can, here is a listing of some of the projects I've been contributing to:
+I'm a big fan of open source, and anyone that has been working with software in the last 5 years knows that a ton of cutting edge software development is happening in the world of open source.  Open source combined with Github and *NIX is a powerful thing.  I like to contribute to open source whenever I can, but more importantly I try to learn from well respected code and developers.
 
-## Github Projects ![Alt Text]({filename}/images/GitHub-Mark-64px.png)
+The software world is strange because it seems to me that many developers don't bother to _learn_ from better programmers than themselves.  I think it's just as important to  _read_ and _understand_ good code as is it is to write your own.  Here are some projects that I follow, learn from, and occasionally contribute to:
+
+### [streamparse](https://github.com/parsely/streamparse)
+
+Streamparse allows you to run python code in the Storm framework.  I've modeled some of my coding style after this repository since it is pretty well done and Pythonic.
+
+### [elastalert](https://github.com/Yelp/elastalert)
+
+A handy alerting tool for Elastic Search, I use this to monitoring my data stream in Elastic Search.  I've written some custom alerts using this framework and hope to contribute more to the project.
+
+### [kibana](https://github.com/elastic/kibana)
+
+I use Kibana as a real-time visualization engine for data streams.  I follow their development pretty closely.
+
+## My Github Projects ![Alt Text]({filename}/images/GitHub-Mark-64px.png)
 
 A lot of the open source work I've done is thanks to my company, **IST Research.**  I've been fortunate to be able to use open source code for my job and also open source code back to the community where it makes sense.  For some of these projects I'm the primary contributer, and others are ones that I use frequently have some more minor contributions.
 
