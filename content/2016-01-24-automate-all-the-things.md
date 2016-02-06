@@ -355,7 +355,7 @@ Note that this requires creating a special **testing** inventory file that uses 
 
 # Conclusion
 
-If you have to manage more that one server, you should probably be using some sort of provisioning framework.  Ansible is certainly a good choice, and is becoming increasingly popular relative to other tools such as Chef or Puppet.
+If you have to manage more that one server, you should probably be using some sort of provisioning framework.  Ansible is certainly a good choice, and is becoming increasingly popular relative to other tools such as Chef or Puppet.  In fact, judging at least by the number of attention on Github, Ansible is [blowing away the competition](http://bit.ly/1QiTuLU).
 
 Using a combination of Vagrant VM's and CI tools like Travis are essential to making sure you don't break the build.  Vagrant is great for development and Travis is great for those one line changes that "shouldn't" break the build but should get tested anyway.
 
